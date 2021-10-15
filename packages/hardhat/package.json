@@ -54,7 +54,7 @@
     "hf": "hf() { local network=\"$1\"; shift; FORKING_NETWORK=$network yarn hardhat \"$@\"; }; hf",
     "chain": "hardhat node --network hardhat --no-deploy",
     "fork": "env -- hardhat node --no-deploy --network hardhat --fork https://mainnet.infura.io/v3/$INFURA_KEY",
-    "test": "test() { TESTING=1 yarn hf \"$1\" test; }; test",
+    "test": "hardhat test",
     "compile": "COMPILING=1 hardhat compile",
     "types": "yarn typechain --target ethers-v5 --out-dir types/typechain 'artifacts/!(build-info)/**/+([a-zA-Z0-9_]).json'",
     "deploy": "hardhat deploy --export-all ../vue-app/src/config/hardhat_contracts.json",
