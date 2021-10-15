@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "SafeMath",
+  "sourceName": "contracts/0xBitcoinExtended.sol",
+  "abi": [],
+  "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a7230582044e11991bca6bbad91ba0148d06bbf3594c4eecd1fa219a9982958f9e5352a4f0029",
+  "deployedBytecode": "0x6060604052600080fd00a165627a7a7230582044e11991bca6bbad91ba0148d06bbf3594c4eecd1fa219a9982958f9e5352a4f0029",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

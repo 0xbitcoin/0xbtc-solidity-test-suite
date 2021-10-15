@@ -1,11 +1,11 @@
 import { Contract, Signer } from 'ethers'
 import * as hre from 'hardhat'
-import { WETH9 } from '../../types/typechain'
+import { XBitcoinToken } from '../../types/typechain'
 
 const { getNamedSigner, contracts, deployments, ethers } = hre
 
 interface TestSetupResult {
-  weth9: WETH9
+  zxbtc: XBitcoinToken
  
   user: Signer
   filler: Signer
@@ -20,12 +20,12 @@ export const setup = deployments.createFixture<TestSetupResult, never>(async () 
   const user = await getNamedSigner('borrower')
   const filler = await getNamedSigner('lender')
 
-  const weth9 = await contracts.get<WETH9>('WETH9')
+  const zxbtc = await contracts.get<XBitcoinToken>('_0xBitcoinToken')
    
   
 
   return {
-    weth9,
+    zxbtc,
     
     user,
     filler,
